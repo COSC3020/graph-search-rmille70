@@ -1,6 +1,6 @@
 
 const fs = require('fs');
-const jsc = require('jsverify');
+const assert = require('assert');
 
 eval(fs.readFileSync('code.js')+'');
 
@@ -84,6 +84,6 @@ function runTest(testCase) {
 }
 
 for(let c = 0; c < testCases.length; c++){
-	if(runTest(testCases[c]) == false) { throw "One or More Tests Failed"; }
+	assert(runTest(testCases[c]));
 }
 
