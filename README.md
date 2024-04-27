@@ -27,7 +27,7 @@ the function and run automatically when you commit through a GitHub action.
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
 
-- The big theta bound for my function is $\Theta(v + e)$ where $v$ is the number of vertices in a graph, and $e$ is the number of edges. In the worst case scenario dfsHelper would traverse all vertices in the graph, and all edges in the graph; thus the big theta bound on the functions worst case is $\Theta(v + e).$
+- The big theta bound for my function is $\Theta(v + e)$ where $v$ is the number of vertices in a graph, and $e$ is the number of edges. In the worst case scenario dfsFinder would traverse all vertices (that can be reached) in the graph, and all edges in the graph; thus the big theta bound on the functions worst case is $\Theta(v + e).$
 
 ## Bonus
 
