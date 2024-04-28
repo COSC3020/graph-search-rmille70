@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/M24O3lId)
 # Search in Graphs
 
 Recall the pseudocode for Depth-First Search:
@@ -25,6 +26,8 @@ the function and run automatically when you commit through a GitHub action.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+- The big theta bound for my function is $\Theta(v + e)$ where $v$ is the number of vertices in a graph, and $e$ is the number of edges. In the worst case scenario dfsFinder would traverse all vertices (that can be reached) in the graph, and all edges in the graph; thus the big theta bound on the functions worst case is $\Theta(v + e).$
 
 ## Bonus
 
